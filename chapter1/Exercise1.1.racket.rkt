@@ -4,20 +4,20 @@
 (- 9 1) ;8
 (/ 6 2) ;3
 (+ (* 2 4)(- 4 6)) ;8+(-2)= 6
-(define a 3)
-(define b (+ a 1))
-(+ a b (* a b))
-(= a b)
-(if (and (> b a) (< b (* a b)))
+(define a 3) ;a = 3
+(define b (+ a 1)) ;b = 3 + 1 = 4
+(+ a b (* a b)) ;3 + 4 + 3*4 = 19
+(= a b) ; a != b so False
+(if (and (> b a) (< b (* a b))) ; answer is b so it is 4
     b
     a)
 (cond ((= a 4) 6)
-      ((= b 4) (+ 6 7 a))
+      ((= b 4) (+ 6 7 a)); b is so conditon met and answer is 6 +7 + 3 = 16
       (else 25))
-(+ 2 (if (> b a) b a))
+(+ 2 (if (> b a) b a)) ;b > a so b + 2 = 4 + 2 = 6
 
 (* (cond ((> a b ) a)
-         ((< a b) b)
+         ((< a b) b) ; b = 4 and a + 1 = 4, a*b = 16
          (else -1))
    (+ a 1))
 
