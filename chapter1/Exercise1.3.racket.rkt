@@ -1,5 +1,5 @@
 #lang racket
-(define (sum_sq_bigger2 a b c)
+(define (sum_square_bigger2 a b c)
 ( cond
 ((and (>= a c) (>= b c))
 (+ (* a a) (* b b))
@@ -13,3 +13,5 @@
 )
 
 )
+
+(sum_square_bigger2 1 2 4) ;output is 4*4 + 2*2 = 20
