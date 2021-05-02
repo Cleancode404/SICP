@@ -12,7 +12,7 @@
 
 
 ;another approach with linear iterative process
-(define (factorial n)
+(define (factorials n)
   (fact-iter 1 1 n))
 (define (fact-iter product counter max-count)
   (if (> counter max-count)
@@ -21,7 +21,7 @@
                  (+ counter 1)
                  max-count)))
 
-(factorial 6)
+(factorials 6)
 
 ;1.2.2 tree recursion
 ;fibonacci numbers
@@ -34,7 +34,7 @@
 
 
 ;another fibonacc approach
-(define (fib n)
+(define (fibs n)
   (fib-iter 1 0 n))
 
 (define (fib-iter a b count)
