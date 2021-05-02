@@ -74,4 +74,12 @@
 ;test program and check output
 (cube 5)
 
-(sine 12.15) ;takes 5 steps to compute 
+(sine 12.15) ;takes 5 steps to compute
+
+
+
+;1.2.4 exponentiation
+(define (expt b n)
+  (if (= n 0)
+      1
+      (* b (expt b (- n 1)))))
