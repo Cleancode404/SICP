@@ -76,6 +76,8 @@
 
 (sine 12.15) ;takes 5 steps to compute
 
+(sine 0.21205)
+
 
 
 ;1.2.4 exponentiation
