@@ -94,4 +94,3 @@
                  (- counter 1)
                  (* b product))))
 
-(expts 2 5)
