@@ -109,5 +109,10 @@
 (define (square x) (* x x))
 
 (fast-expt 2 5)
-  
 
+
+;1.2.5 Greatest Common Divisors (GCD)
+(define (gcd a b)
+  (if (= b 0)
+      a
+      (gcd b (remainder a b))))
