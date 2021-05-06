@@ -14,8 +14,8 @@
             (* (denom x) (denom y))))
 
 (define (mul-rat x y)
-  (make-rat (* (numer x ) (denom y))
-            (* (numer x) (denom y))))
+  (make-rat (* (numer x ) (numer y))
+            (* (denom x) (denom y))))
 
 
 (define (div-rat x y)
@@ -46,9 +46,21 @@
 (define one-half (make-rat 1 2))
 (print-rat one-half)
 (newline)
+
+(define one-fifth (make-rat 1 5))
+(print-rat one-fifth)
+(newline)
+
+(define one-third (make-rat 1 3))
+(print-rat (add-rat one-half one-third))
+(newline)
+
+(print-rat (mul-rat one-half one-fifth))
+(newline)
+
 ;pairs
 
 (define x (cons 1 2))
-(car x)
+;(car x)
 
-(cdr x)
+;(cdr x)
