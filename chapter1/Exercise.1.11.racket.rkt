@@ -7,7 +7,7 @@
       n
       (+ (f_recursive (- n 1))
          (* 2 (f_recursive(- n 2)))
-         (* 3(f_recursive (- n 3))))) 
+         (* 3(f_recursive (- n 3)))))) 
 
 ;check output
 ;(f_recursive 3)
