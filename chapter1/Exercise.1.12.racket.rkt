@@ -13,3 +13,6 @@
         (else (+ (pascal (- row 1) (- col 1))
                  (pascal (- row 1) col)))))
 
+;check output
+(pascal 2 1)
+
